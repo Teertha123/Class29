@@ -6,7 +6,7 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
-var bird, slingShot;
+var bird, slingshot;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -36,10 +36,10 @@ function setup(){
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
 
-    bird = new Bird(100,100);
+    bird = new Bird(200,50);
 
     //log6 = new Log(230,180,80, PI/2);
-    slingshot = new SlingShot(bird.body,{x:200, y:100});
+    slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
 
 function draw(){
